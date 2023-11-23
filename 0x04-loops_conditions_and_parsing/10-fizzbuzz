@@ -1,21 +1,20 @@
 #!/usr/bin/env bash
 # Prints numbers ranging from 1 through 100 fizzbuzz
 
-index=1
-times_to_print=100
+i=1
 
-for ((; index <= times_to_print; index++));
+for ((; i <= 100; i++));
 do
-	if (("$index" % 3 == 0 && "$index" % 5 == 0))
+	if (("$i" % 3 == 0 && "$i" % 5 == 0))
 	then
 		echo "FizzBuzz"
-	elif (("$index" % 3 == 0))
+	elif (("$i" % 3 == 0))
 	then
 		echo "Fizz"
-	elif (("$index" % 5 == 0))
+	elif (("$i" % 5 == 0))
 	then
 		echo "Buzz"
 	else
-		echo "$index";
+		echo "$i";
 	fi
 done
