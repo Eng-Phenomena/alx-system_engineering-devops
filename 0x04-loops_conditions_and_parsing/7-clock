@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# the clock
+
+i=0
+j=0
+h=0
+while [ $i -lt 780 ]
+do 
+	if [ $j -eq 0 ] ; then
+		echo "Hour: $h"
+		((h++))
+	fi
+
+	((j++))
+	if [ $j -eq 60 ] ; then
+		j=0	
+	else
+		echo $j
+	fi
+done
