@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displays the list of currently running programs
+
+ps -eux
