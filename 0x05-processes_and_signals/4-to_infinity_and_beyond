@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# infinte loop of text
+
+text="To infinity and beyond"
+while [ 1 ]
+do
+	echo $text
+	sleep 2
+done

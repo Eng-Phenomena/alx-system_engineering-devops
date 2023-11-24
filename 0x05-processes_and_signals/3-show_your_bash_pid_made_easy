@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displayin pid with word bash
+
+pgrep -l bash

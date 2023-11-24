@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# killing a procces that has a sigterm handle
+
+kill -9 "$(pgrep -f highlander)"
